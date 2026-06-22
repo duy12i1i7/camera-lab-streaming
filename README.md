@@ -40,13 +40,15 @@ Bạn không cần phải thao tác thủ công. Chỉ cần chạy script `inst
 
 ## Tùy chỉnh Cấu hình Camera
 
-Mở tệp `configs/mediamtx.yml` để chỉnh sửa IP hoặc luồng của Camera:
+Sau khi cài đặt xong, nếu bạn muốn thêm Camera mới hoặc đổi IP, hãy sửa trực tiếp file cấu hình đang chạy trên hệ thống tại đường dẫn `/usr/local/etc/mediamtx.yml`:
 ```yaml
 paths:
   cam1:
     source: rtsp://user:pass@192.168.1.10:554/cam/realmonitor?channel=1&subtype=0
 ```
-Sau khi sửa, nhớ khởi động lại dịch vụ: `sudo systemctl restart mediamtx`
+Sau khi sửa và lưu file, hãy gõ lệnh sau để phần mềm cập nhật luồng mới:
+`sudo systemctl restart mediamtx`
+
 
 ## Hướng dẫn Xem Camera
 

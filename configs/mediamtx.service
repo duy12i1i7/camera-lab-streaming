@@ -1,0 +1,12 @@
+[Unit]
+Description=MediaMTX Server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mediamtx /usr/local/etc/mediamtx.yml
+Restart=always
+User=root
+WorkingDirectory=/tmp
+
+[Install]
+WantedBy=multi-user.target

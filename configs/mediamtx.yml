@@ -1,0 +1,14 @@
+rtsp: no
+rtmp: no
+hls: no
+srt: no
+moq: no
+webrtc: yes
+
+paths:
+  cam1:
+    source: rtsp://admin:Avis%4011235813@192.168.100.4:554/cam/realmonitor?channel=1&subtype=0
+  cam2:
+    source: rtsp://admin:Avis%4011235813@192.168.100.5:554/cam/realmonitor?channel=1&subtype=0
+  cam3:
+    source: rtsp://admin:Avis%4011235813@192.168.100.6:554/cam/realmonitor?channel=1&subtype=0
